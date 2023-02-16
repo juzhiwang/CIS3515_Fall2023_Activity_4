@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         // Trying to create array of integers that are multiples of 5
         // Verify correctness by examining array values.
         val textSizes = Array(20) { (it + 1) * 5 }
+        with(findViewById<RecycelyView>(R.id))
         for (i in 0 < until < textSizes.size)
             Log.d("array value", textSizes[i].toString())
         textSizeSelector.adapter=
